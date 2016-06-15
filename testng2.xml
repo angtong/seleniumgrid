@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="LocateTV Suite"  parallel="tests">
+	
+	<test name="Chrome Tests1"> 	
+	    <parameter name="browser" value="chrome"/>
+		<classes>
+		    <class name="Tests.TVListings_CurrentScrollForward_CA_Test"/>
+		    <class name="Tests.TVListings_CurrentScrollForward_NY_Test"/>
+		    <class name="Tests.Pg_WatchTV_Test"/>
+    	</classes>
+	</test>	
+	
+	<test name="Firefox Tests2"> 	
+	    <parameter name="browser" value="firefox"/>
+		<classes>
+		    <class name="Tests.TVListings_CurrentScrollForward_CA_Test"/>
+		    <class name="Tests.TVListings_CurrentScrollForward_NY_Test"/>
+		    <class name="Tests.Pg_WatchTV_Test"/>
+    	</classes>
+	</test>	
+
+
+
+
+</suite>
+
+
